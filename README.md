@@ -50,6 +50,7 @@ cd ..
 
 ### 3. Start All Services
 ```bash
+turn on Docker Desktop
 docker-compose up --build -d
 ```
 
