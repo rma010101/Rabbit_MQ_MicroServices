@@ -55,7 +55,7 @@ docker-compose up --build -d
 
 ### 4. Verify Services are Running
 ```bash
-docker ps
+docker ps -a
 ```
 
 You should see:
