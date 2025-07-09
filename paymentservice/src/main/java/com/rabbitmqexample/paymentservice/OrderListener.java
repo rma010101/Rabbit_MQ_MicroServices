@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 public class OrderListener {
 
     //Method to listen for incoming orders messages from RabbitMQ
-    @RabbitListener(queues = "order.queue")
+    @RabbitListener(queues = "order.queue", concurrency = "1")
     public void handleOrder(Order order) {
         System.out.println("Payment Service received order: " + order.getOrderId() + ", for item: " + order.getItem() + 
         ", with amount: $" + order.getAmount());
