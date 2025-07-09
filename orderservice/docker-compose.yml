@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  # Order Service
+  order-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: order-service-standalone
+    ports:
+      - "8080:8080"  # Default Spring Boot port
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    networks:
+      - order-network
+    restart: unless-stopped
+
+# Networks
+networks:
+  order-network:
+    driver: bridge
