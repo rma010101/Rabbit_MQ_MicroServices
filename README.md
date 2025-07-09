@@ -50,8 +50,9 @@ cd ..
 
 ### 3. Start All Services
 
-turn on Docker Desktop (on your laptop)
 ```bash
+turn on Docker Desktop (on your laptop)
+
 docker-compose up --build -d (type this string on the terminal)
 ```
 
