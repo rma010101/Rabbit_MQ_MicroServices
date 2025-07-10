@@ -39,12 +39,12 @@ cd rabbitmq-microservices
 ```bash
 # Build OrderService
 cd orderservice
-./mvnw clean package -DskipTests
+./mvnw clean package
 cd ..
 
 # Build PaymentService
 cd paymentservice
-./mvnw clean package -DskipTests
+./mvnw clean package
 cd ..
 ```
 
